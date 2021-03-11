@@ -12,6 +12,7 @@ import MasterDetail from "../pattern-components/MasterDetail";
 import CreateReadUpdateDelete from "../pattern-components/CreateReadUpdateDelete";
 import SearchList from "../pattern-components/SearchList";
 import SearchForm from "../pattern-components/SearchForm";
+import ResourceInstances from '../components/ResourceInstances/ResourceInstances';
 import "../pattern-components/patterns.scss";
 
 class UIShellBody extends Component {
@@ -28,7 +29,8 @@ class UIShellBody extends Component {
     "Master Detail": MasterDetail,
     "Create, Read, Update, Delete": CreateReadUpdateDelete,
     "Search List": SearchList,
-    "Search Form": SearchForm
+    "Search Form": SearchForm,
+    "Resource Instances": ResourceInstances
   };
   defaultComponent = "Display Form";
 

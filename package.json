@@ -30,9 +30,10 @@
   "author": "Dave Wakeman",
   "license": "ISC",
   "dependencies": {
-    "client": "file:./client",
     "body-parser": "^1.17.2",
+    "client": "file:./client",
     "cookie-parser": "^1.4.3",
+    "cors": "^2.8.5",
     "express": "^4.15.3",
     "express-http-proxy": "^1.6.0",
     "ibm-cloud-env": "^0",

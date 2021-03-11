@@ -57,6 +57,8 @@ spec:
           env:
             - name: INGRESS_HOST
               value: ""
+            - name: API_HOST
+              value: "cloud-utilities-bff"
             - name: PROTOCOLS
               value: ""
             - name: LOG_LEVEL
