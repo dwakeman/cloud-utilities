@@ -1,9 +1,11 @@
 import axios from 'axios';
-import isDev from './isDev.ts';
+
+const apiUrl = process.env.NODE_ENV === 'development' ?  'http://localhost:3001' : `https://${window.location.hostname}/api`;
+console.log('[apiController.js] apiUrl is ' + apiUrl, window.location);
 
 const apiController = axios.create({
   //baseURL: 'https://resource-controller.cloud.ibm.com/v2'
-  baseURL: isDev() ?  'http://localhost:3001' : `https://${window.location.hostname}/api`
+  baseURL: apiUrl
 });
 
 apiController.defaults.headers.common['Authorization'] = 'AUTH_TOKEN_INSTANCE';
