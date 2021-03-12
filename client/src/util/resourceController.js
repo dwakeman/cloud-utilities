@@ -1,8 +1,15 @@
 import axios from 'axios';
 
+/* 
+    This file is not being used at the moment; the apiController is being used to forward 
+    requests to the /api endpoint in the BFF.  However, it could be used later to send
+    requests that are fulfilled directly by the node app that serves this app.
+
+*/
+
 const resourceController = axios.create({
   //baseURL: 'https://resource-controller.cloud.ibm.com/v2'
-  baseURL: 'http://localhost:3000'
+  baseURL: 'http://localhost:3100'
 });
 
 resourceController.defaults.headers.common['Authorization'] = 'AUTH_TOKEN_INSTANCE';

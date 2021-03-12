@@ -58,7 +58,7 @@ spec:
             - name: INGRESS_HOST
               value: ""
             - name: API_HOST
-              value: "cloud-utilities-bff"
+              value: {{ include "starter-kit.fullname" . }}
             - name: PROTOCOLS
               value: ""
             - name: LOG_LEVEL
