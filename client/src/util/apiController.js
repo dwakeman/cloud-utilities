@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const apiUrl = process.env.NODE_ENV === 'development' ?  'http://localhost:3100' : `https://${window.location.hostname}/api`;
+const apiUrl = process.env.NODE_ENV === 'development' ?  'http://localhost:3100' : `https://${window.location.hostname}`;
 console.log('[apiController.js] apiUrl is ' + apiUrl, window.location);
 
 const apiController = axios.create({
