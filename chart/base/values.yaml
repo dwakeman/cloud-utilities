@@ -36,6 +36,9 @@ ingress:
 
 #  tlsSecretName: ""
 
+# This is used by the app to define the URL of the bff app
+apiHost: cloud-utilities-bff
+
 vcsInfo:
   repoUrl: ""
   branch: ""
