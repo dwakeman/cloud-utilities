@@ -10,7 +10,7 @@ import {
   Icon
 } from "carbon-components-react";
 import { iconCheckmarkSolid } from "carbon-icons";
-import "../../pattern-components/patterns.scss";
+import "../components.scss";
 import isDev from '../../util/isDev.ts';
 //import IBMResources from '../../data/ibmResources.json';
 import apiController from '../../util/apiController';

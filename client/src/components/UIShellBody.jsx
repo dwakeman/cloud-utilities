@@ -1,38 +1,16 @@
 import React, { Component } from "react";
-import DisplayForm from "../pattern-components/DisplayForm";
-import ValidatingForm from "../pattern-components/ValidatingForm";
-import UpdateForm from "../pattern-components/UpdateForm";
-import ValidatingFormWizard1 from "../pattern-components/ValidatingFormWizard1";
-import ValidatingFormWizard2 from "../pattern-components/ValidatingFormWizard2";
-import SimpleList from "../pattern-components/SimpleList";
-import TableList from "../pattern-components/TableList";
-import ListToList from "../pattern-components/ListToList";
-import LinkedList from "../pattern-components/LinkedList";
-import MasterDetail from "../pattern-components/MasterDetail";
-import CreateReadUpdateDelete from "../pattern-components/CreateReadUpdateDelete";
-import SearchList from "../pattern-components/SearchList";
-import SearchForm from "../pattern-components/SearchForm";
+import LandingPage from '../content/LandingPage/LandingPage';
 import ResourceInstances from '../components/ResourceInstances/ResourceInstances';
-import "../pattern-components/patterns.scss";
+import Resources from '../components/ResourceInstances/Resources';
+import "../components/components.scss";
 
 class UIShellBody extends Component {
   components = {
-    "Display Form": DisplayForm,
-    "Validating Form": ValidatingForm,
-    "Update Form": UpdateForm,
-    "Validating Form Wizard 1": ValidatingFormWizard1,
-    "Validating Form Wizard 2": ValidatingFormWizard2,
-    "Simple List": SimpleList,
-    "Table List": TableList,
-    "List to List": ListToList,
-    "Linked List": LinkedList,
-    "Master Detail": MasterDetail,
-    "Create, Read, Update, Delete": CreateReadUpdateDelete,
-    "Search List": SearchList,
-    "Search Form": SearchForm,
-    "Resource Instances": ResourceInstances
+    "Home": LandingPage,
+    "Resource Instances": ResourceInstances,
+    "Resources": Resources
   };
-  defaultComponent = "Display Form";
+  defaultComponent = "Home";
 
   render() {
     const PatternName = this.components[
